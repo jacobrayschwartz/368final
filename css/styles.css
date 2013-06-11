@@ -9,66 +9,69 @@
 */
 
 body{
-	background-image: url("../img/bgTile.png");
+	overflow:hidden;
+	background:red;
+}
+#outerContainer{
+	overflow:hidden;
+	background:#D9B384;
+	display: block;
+	position: absolute;
+	width:100%;
 	height:100%;
 }
-#rightColumnContainer{
-	background: rgba(217,179,132,.5);
-	/*float:right;
-	width: 100%;
-	height: 100%;
-	margin-left:250px;
-	padding-left: 250px;*/
 
-	position: absolute;
-	left: 250px;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	overflow: scroll;
+nav.navigation{
+	margin:0;
+	display: block;
+	width:100%;
+	background: #39718C;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
 }
-#leftColumnContainer{
-	position: fixed;
-	background:#46594B;
-	float:left;
-	clear:left;
-	width: 250px;
-	height: 100%;
-	clear: both;
+nav.navigation ul{
+	margin:0;
+	height:3em;
+	display: -webkit-flex;
+	-webkit-flex-flow: row wrap;
+	-webkit-justify-content: space-around;
+
+    justify-content: space-around;
 }
 nav li{
-	color:white;
-	width:100%;
-	font-size: 2em;
-	list-style-type: none;
-	font-family: 'Oxygen', sans-serif;
-	line-height: 200%;
-	transition: background-color 1s;
+	display: inline;
 }
-nav li a{
-	text-decoration: none;
-	color:white;
-}
-nav li:hover{
-	background-color: #39718C;
-	transition: background-color 1s;
-}
-nav{
-	position:absolute;
-	margin:50% 0 auto 0;
-	width:100%;
-}
-h1#name{
-	text-align: center;
+nav a{
 	color: white;
-	font-family: 'Merriweather Sans', sans-serif;
-	font-size: 3em;
-	line-height: 100%;
-	margin-top:0;
-	background: rgba(0,0,0,.4);
-	transition: text-shadow 2.5s ease;
+	text-decoration: none;
+	font-size: 2em;
+	display: inline;
 }
-h1#name:hover{
-	text-shadow: 0 0 5px white;
-	transition: text-shadow 2.5s ease;
+
+.container{
+	background: #46594B;
+	width: 80%;
+	height: 80%;
+	border-radius: 20px;
+	margin: 5% auto 5% auto;
+	overflow: hidden;
+	display: block;
+}
+.content{
+	overflow:auto;
+}
+#home{
+	margin:5%;
+}
+#sax{
+	height:30em;
+	width: auto;
+	display:block;
+	float: left;
+}
+span#text{
+	float:right;
+	color:white;
+	display: inline;
+	everflow:auto;
 }
