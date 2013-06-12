@@ -50,28 +50,54 @@ nav a{
 
 .container{
 	background: #46594B;
-	width: 80%;
-	height: 80%;
+	width: 90%;
+	height: 90%;
 	border-radius: 20px;
-	margin: 5% auto 5% auto;
+	margin: 2.5% 5%;
 	overflow: hidden;
 	display: block;
+	position: fixed;
+	-webkit-transform: translateX(500%);
+	transform: translateX(500%);
+	z-index: -1;
+	transition: all 2s;
 }
-.content{
+.container:target{
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	z-index: 1;
+	transition: all 2s;
+}
+.content#homeContent{
+	height: 100%;
+	padding: 0 2% 2% 2%;
 	overflow:auto;
-}
-#home{
-	margin:5%;
+	display: -webkit-flex;
+	-webkit-flex-flow: row wrap;
+	-webkit-align-items: center;
 }
 #sax{
-	height:30em;
-	width: auto;
-	display:block;
-	float: left;
+	max-height:60%;
+	max-width:auto;
+	display:inline;
+	margin: 5px;
 }
-span#text{
-	float:right;
+#home span#text{
 	color:white;
 	display: inline;
-	everflow:auto;
+	overflow:auto;
+	padding: 10px;
+	height: 60%;
+}
+
+
+
+/*About me Section*/
+.content#resumeContent{
+	height: 100%;
+	padding: 0 2% 2% 2%;
+	overflow:auto;
+	display: -webkit-flex;
+	-webkit-flex-flow: column wrap;
+	-webkit-align-items: flex-start;
 }
