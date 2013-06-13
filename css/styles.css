@@ -85,19 +85,26 @@ nav a{
 #home span#text{
 	color:white;
 	display: inline;
-	overflow:auto;
 	padding: 10px;
 	height: 60%;
 }
 
 
 
-/*About me Section*/
+/*Resume Section*/
 .content#resumeContent{
 	height: 100%;
 	padding: 0 2% 2% 2%;
 	overflow:auto;
+	color:white;
 	display: -webkit-flex;
 	-webkit-flex-flow: column wrap;
 	-webkit-align-items: flex-start;
+	-webkit-justify-content: flex-start;
+}
+#resumeContent h1{
+	font-size: 3em;
+}
+h1,h2{
+	font-family: Telex, sans-serif;
 }
